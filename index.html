@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="generator" content="Movable Type 5.2.2" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/my.css">
+		<title>延昊南的官方网站-Yan Haonan's Official Website</title>
+		<style>
+	    </style>
+			  <!--[if lt IE 9]>
+			    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+				  <style>
+			body.one-column #container{
+				background-color: #f5f5d5;
+				color: #111111;
+				display: absolute;
+				width: 50em;
+				margin: 10% auto;
+				min-width: 0;
+				top: 10%;
+				left:25%;
+				overflow: hidden;
+			}
+			body.one-column #container h1,
+			body.one-column #container p,
+			body.one-column #container a{
+				color: #111111;
+			}
+			  </style>
+			  <![endif]-->
+	</head>
+	<body id="classic-website" class="mt-main-index one-column">
+	    <div id="container">
+	        <div id="container-inner">
+				<div id="header">
+	    			<div id="header-inner">
+	        			<div id="header-content" onclick="backgroundImage();return false;">
+							<h1>延昊南的官方网站</h1>
+							<p>Yan Haonan's Official Website</p>
+	        			</div>
+	    			</div>
+				</div>
+	        	<div id="content">
+	                <div id="content-inner">
+	                    <div id="alpha">
+	                    	<div id="alpha-inner">
+	 							<div id="page-alpha" style="margin-bottom:2em;">
+									<p>» <!-- a href="docs/">Articles</a> | -->
+										<a href="http://blog.yhngo.xyz">Blog</a> / <a href="http://instagram.com/VegetaPn">Instagram</a> / <a href="about.html">Me</a>
+									</p>
+									<!-- p>» <a href="tweets/">Tweets</a></p>
+									<p>» <a href="about.html">About</a></p -->
+								</div>
+								<div id="page-beta">
+								<!--<div id="photo">
+								<p><img src="person2_150.jpg" /></p>
+								<p class="photo-desc">Taken in 2005</p>
+								</div>-->
+								</div>
+	                        </div>
+	                    </div>
+						<div id="beta">
+		    				<div id="beta-inner">
+		    				</div>
+						</div>
+	                </div>
+	            </div>
+	            <div id="footer">
+	    			<div id="footer-inner">
+	        			<div id="footer-content">
+	        				<p>
+	        					<!-- <a href="http://www.ruanyifeng.com/contact.html">Contact</a> -->
+	        					 | <b>www.yhngo.xyz</b>
+	        					 <span id="img_placer"></span> 
+	        				</p>
+	        				<p>
+	        					<!-- <a href="http://www.ruanyifeng.com/contact.html">Contact</a> -->
+	        					 | Site Tools: <a target="_blank" href="http://swagger.yhngo.xyz">Swagger</a>
+	        					 <span id="img_placer"></span> 
+	        				</p>
+
+						</div>
+	    			</div>
+				</div>
+	        </div>
+	    </div>
+		<script>
+			var pub_img_current_image;
+			function backgroundImage(){
+			var pub_img_path='img/';
+
+			var pub_img_num = 3;
+
+			var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
+
+			var pub_img_url=function(){return pub_img_path+pub_img_current_no()+'.jpg';};
+
+			if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
+
+			if ('querySelector' in document) {
+				var body = document.querySelector('body').style;
+			} else {
+				var body = document.body.style;
+			}
+			body.backgroundSize = 'cover';
+			body.backgroundRepeat = 'no-repeat';
+			body.backgroundImage = 'url('+ pub_img_current_image +')';
+
+			var span = document.getElementById('img_placer');
+			span.innerHTML = '<span style="background-image: url('+(pub_img_current_image=pub_img_url())+');width: 0px;height: 0px;display: inline;"></span>';
+			}
+			backgroundImage();
+		</script>
+	</body>
+</html>

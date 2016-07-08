@@ -1,0 +1,1 @@
+scp -i ~/.ssh/vegeta -r ~/Documents/ownwebsite root@s.yhngo.xyz:/webapps
